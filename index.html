@@ -1,420 +1,441 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
-    <title>Walter Carrasco - Desarrollador Full Stack | APIs REST | Python & JavaScript</title>
-    <meta name="description" content="Walter Carrasco - Desarrollador Full Stack especializado en APIs REST, Python, JavaScript, Angular y React Native. +2 años creando soluciones innovadoras con IA.">
-    <meta name="keywords" content="desarrollador full stack, python, javascript, angular, react native, apis rest, fastapi, firebase, desarrollador argentina, programador python">
-    <meta name="author" content="Walter Carrasco">
-    <meta name="robots" content="index, follow">
-    <meta name="language" content="Spanish">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Walter Carrasco - Desarrollador Full Stack">
-    <meta property="og:description" content="Especialista en APIs REST, Python, JavaScript y soluciones innovadoras con IA. +2 años de experiencia.">
-    <meta property="og:url" content="https://waltercarrasco.dev.ar">
-    <meta property="og:site_name" content="Walter Carrasco Portfolio">
-    <meta property="og:locale" content="es_AR">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Walter Carrasco - Desarrollador Full Stack">
-    <meta name="twitter:description" content="Especialista en APIs REST, Python, JavaScript y soluciones innovadoras con IA.">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://waltercarrasco.dev.ar">
-    
-    <!-- Preconnect for performance -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-    
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Walter Carrasco",
-        "jobTitle": "Desarrollador Full Stack",
-        "description": "Desarrollador Full Stack especializado en APIs REST, Python, JavaScript, Angular y React Native",
-        "url": "https://waltercarrasco.dev.ar",
-        "sameAs": [
-            "https://www.linkedin.com/in/walter-carrasco-sant/",
-            "https://github.com/someone1a"
-        ],
-        "knowsAbout": [
-            "Python",
-            "JavaScript",
-            "FastAPI",
-            "Angular",
-            "React Native",
-            "APIs REST",
-            "Firebase",
-            "Inteligencia Artificial"
-        ],
-        "worksFor": {
-            "@type": "Organization",
-            "name": "Freelance Developer"
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Walter Carrasco | Front-End Developer</title>
+  <meta
+    name="description"
+    content="Front-End Developer from Argentina building modern, fast and user-focused web applications with Angular, JavaScript and Tailwind."
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    html {
+      scroll-behavior: smooth;
     }
-    </script>
-    <link rel="stylesheet" href="assets/css/styles.css">
+
+    body {
+      font-family: "Inter", sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(59, 130, 246, 0.14), transparent 30%),
+        linear-gradient(180deg, #020617 0%, #0f172a 100%);
+    }
+
+    .glass {
+      background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(148, 163, 184, 0.12);
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #ffffff, #93c5fd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .badge {
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      background: rgba(30, 41, 59, 0.7);
+      color: #cbd5e1;
+      transition: all 0.25s ease;
+    }
+
+    .badge:hover {
+      transform: translateY(-2px);
+      border-color: rgba(96, 165, 250, 0.35);
+      color: #fff;
+    }
+
+    .project-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 60px rgba(2, 6, 23, 0.45);
+      border-color: rgba(96, 165, 250, 0.25);
+    }
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(18px);
+      animation: fadeUp 0.8s ease forwards;
+    }
+
+    .fade-up-delay-1 { animation-delay: 0.12s; }
+    .fade-up-delay-2 { animation-delay: 0.24s; }
+    .fade-up-delay-3 { animation-delay: 0.36s; }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .grid-bg {
+      background-image:
+        linear-gradient(rgba(148,163,184,0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(148,163,184,0.06) 1px, transparent 1px);
+      background-size: 32px 32px;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.15));
+    }
+  </style>
 </head>
-<body>
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <div class="badge-dot"></div>
-                    Disponible para proyectos
-                </div>
-                <h1>Walter Carrasco</h1>
-                <p class="hero-subtitle">
-                    Desarrollador Full Stack especializado en APIs REST, Python & JavaScript.<br>
-                    Creando soluciones innovadoras con +2 años de experiencia.
-                </p>
-                <div class="hero-cta">
-                    <a href="#about" class="btn btn-primary">
-                        <i class="fas fa-rocket"></i>
-                        Acerca de Mi
-                    </a>
-                    <a href="#projects" class="btn btn-outline">
-                        <i class="fas fa-eye"></i>
-                        Ver Trabajos
-                    </a>
-                </div>
-            </div>
+<body class="text-slate-100 min-h-screen">
+
+  <!-- Background -->
+  <div class="fixed inset-0 grid-bg pointer-events-none"></div>
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 border-b border-white/5 bg-slate-950/70 backdrop-blur-xl">
+    <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="text-lg md:text-xl font-extrabold tracking-tight">
+        Walter<span class="text-blue-400">.</span>
+      </a>
+
+      <div class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+        <a href="#about" class="hover:text-white transition" id="navAbout">About</a>
+        <a href="#projects" class="hover:text-white transition" id="navProjects">Projects</a>
+        <a href="#contact" class="hover:text-white transition" id="navContact">Contact</a>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <button onclick="setLang('es')" class="px-3 py-1.5 rounded-lg text-sm border border-white/10 hover:border-white/20 hover:bg-white/5 transition">ES</button>
+        <button onclick="setLang('en')" class="px-3 py-1.5 rounded-lg text-sm border border-white/10 hover:border-white/20 hover:bg-white/5 transition">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative max-w-6xl mx-auto px-6 pt-20 pb-16 md:pt-28 md:pb-24">
+    <div class="max-w-4xl">
+      <span id="heroBadge" class="fade-up inline-flex items-center gap-2 rounded-full border border-blue-400/20 bg-blue-500/10 px-4 py-2 text-sm text-blue-200">
+        Available for remote front-end opportunities
+      </span>
+
+      <h1 id="title" class="fade-up fade-up-delay-1 mt-6 text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight">
+        Front-End Developer building
+        <span class="gradient-text">fast, modern and scalable</span>
+        web experiences
+      </h1>
+
+      <p id="subtitle" class="fade-up fade-up-delay-2 mt-6 max-w-2xl text-base md:text-lg text-slate-300 leading-relaxed">
+        I design and develop polished user interfaces with Angular, JavaScript and Tailwind, focused on performance, usability and clean implementation.
+      </p>
+
+      <!-- Recruiter CTA -->
+      <div class="fade-up fade-up-delay-3 mt-8 flex flex-col sm:flex-row gap-4">
+        <a id="ctaPrimary" href="#contact" class="inline-flex items-center justify-center rounded-2xl bg-blue-600 px-6 py-3.5 font-semibold text-white shadow-lg shadow-blue-900/30 hover:bg-blue-500 transition">
+          Hire me for your next front-end project
+        </a>
+        <a id="ctaSecondary" href="#projects" class="inline-flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 px-6 py-3.5 font-semibold text-slate-100 hover:bg-white/10 transition">
+          View selected work
+        </a>
+      </div>
+
+      <!-- Quick value points -->
+      <div class="mt-8 flex flex-wrap gap-3">
+        <span id="quick1" class="badge rounded-full px-4 py-2 text-sm">Responsive UI</span>
+        <span id="quick2" class="badge rounded-full px-4 py-2 text-sm">Reusable Components</span>
+        <span id="quick3" class="badge rounded-full px-4 py-2 text-sm">Performance Focused</span>
+        <span id="quick4" class="badge rounded-full px-4 py-2 text-sm">Remote Collaboration</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="max-w-6xl mx-auto px-6 py-10 md:py-14">
+    <div class="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 items-start">
+      <div class="glass rounded-3xl p-8">
+        <p id="aboutLabel" class="text-sm uppercase tracking-[0.2em] text-blue-300 mb-3">About</p>
+        <h2 id="aboutTitle" class="text-2xl md:text-3xl font-bold mb-4">
+          Front-end development with real product thinking
+        </h2>
+        <p id="aboutText" class="text-slate-300 leading-relaxed">
+          I’m a developer from Argentina focused on building user interfaces that are visually strong, maintainable and fast. My goal is to translate ideas into clean, responsive and production-ready experiences that help businesses present their products better and users interact more easily.
+        </p>
+      </div>
+
+      <div class="glass rounded-3xl p-8">
+        <p id="stackLabel" class="text-sm uppercase tracking-[0.2em] text-blue-300 mb-4">Tech Stack</p>
+        <div class="flex flex-wrap gap-3">
+          <span class="badge rounded-full px-4 py-2 text-sm">Angular</span>
+          <span class="badge rounded-full px-4 py-2 text-sm">JavaScript</span>
+          <span class="badge rounded-full px-4 py-2 text-sm">TypeScript</span>
+          <span class="badge rounded-full px-4 py-2 text-sm">HTML5</span>
+          <span class="badge rounded-full px-4 py-2 text-sm">CSS3</span>
+          <span class="badge rounded-full px-4 py-2 text-sm">Tailwind CSS</span>
+          <span class="badge rounded-full px-4 py-2 text-sm">Firebase</span>
+          <span class="badge rounded-full px-4 py-2 text-sm">Git</span>
+          <span class="badge rounded-full px-4 py-2 text-sm">GitHub</span>
+          <span class="badge rounded-full px-4 py-2 text-sm">Responsive Design</span>
+          <span class="badge rounded-full px-4 py-2 text-sm">API Integration</span>
+          <span class="badge rounded-full px-4 py-2 text-sm">UI/UX</span>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section class="about fade-in" id="about">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-badge">
-                    <i class="fas fa-user"></i>
-                    Sobre mí
-                </div>
-                <h2 class="section-title">Desarrollador apasionado por la innovación</h2>
-                <p class="section-subtitle">
-                    Combinando experiencia técnica sólida con creatividad para crear soluciones que impactan
-                </p>
-            </div>
+  <!-- PROJECTS -->
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-14">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
+      <div>
+        <p id="projectsLabel" class="text-sm uppercase tracking-[0.2em] text-blue-300 mb-3">Selected Work</p>
+        <h2 id="projectsTitle" class="text-2xl md:text-3xl font-bold">
+          Projects that show product, UI and execution
+        </h2>
+      </div>
+      <p id="projectsText" class="max-w-xl text-slate-400">
+        Each project is designed to showcase practical front-end skills: interface structure, user experience, scalability and clean visual presentation.
+      </p>
+    </div>
 
-            <div class="about-grid">
-                <div class="about-content">
-                    <p>
-                        Soy un desarrollador Full Stack con más de 2 años de experiencia creando soluciones robustas y escalables. 
-                        Mi enfoque está en desarrollar APIs REST eficientes, aplicaciones web modernas y sistemas backend optimizados.
-                    </p>
-                    <p>
-                        Me especializo en Python, JavaScript y frameworks modernos como FastAPI, Angular y React Native. 
-                        Siempre integro las últimas tecnologías, incluyendo inteligencia artificial, para entregar productos excepcionales.
-                    </p>
-                </div>
-                
-                <div class="about-highlights">
-                    <div class="highlight-item">
-                        <div class="highlight-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <div class="highlight-content">
-                            <h4>Desarrollo Integral</h4>
-                            <p>Frontend y backend con tecnologías modernas</p>
-                        </div>
-                    </div>
-                    
-                    <div class="highlight-item">
-                        <div class="highlight-icon">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <div class="highlight-content">
-                            <h4>IA Integrada</h4>
-                            <p>Implementación de modelos inteligentes</p>
-                        </div>
-                    </div>
-                    
-                    <div class="highlight-item">
-                        <div class="highlight-icon">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <div class="highlight-content">
-                            <h4>Optimización</h4>
-                            <p>Automatización y mejora de procesos</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="grid lg:grid-cols-2 gap-8">
+      <!-- Project 1 -->
+      <article class="project-card glass rounded-3xl p-7">
+        <div class="mb-5 flex items-center justify-between">
+          <span id="project1Tag" class="rounded-full bg-blue-500/10 text-blue-200 border border-blue-400/15 px-3 py-1 text-xs font-semibold">
+            Web App
+          </span>
+          <span class="text-xs text-slate-400">01</span>
         </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section class="skills fade-in" id="skills">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-badge">
-                    <i class="fas fa-tools"></i>
-                    Tecnologías
-                </div>
-                <h2 class="section-title">Stack Tecnológico</h2>
-                <p class="section-subtitle">
-                    Herramientas y tecnologías que domino para crear soluciones completas y eficientes
-                </p>
-            </div>
-            
-            <div class="skills-grid">
-                <article class="skill-card">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <h3>Backend</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">FastAPI</span>
-                        <span class="skill-tag">APIs RESTful</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Autenticación</span>
-                        <span class="skill-tag">Integración con Mercado Pago</span>
-                    </div>
-                </article>
-                
-                <article class="skill-card">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <h3>Frontend</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">Angular 20</span>
-                        <span class="skill-tag">React Native</span>
-                        <span class="skill-tag">CSS</span>
-                        <span class="skill-tag">UX/UI</span>
-                    </div>
-                </article>
-                
-                <article class="skill-card">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <h3>Bases de Datos</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Firebase Firestore</span>
-                        <span class="skill-tag">Google Sheets API</span>
-                        <span class="skill-tag">Supabase</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">Gestión de datos</span>
-                    </div>
-                </article>
-                
-                <article class="skill-card">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <h3>Cloud & DevOps</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Vercel</span>
-                        <span class="skill-tag">Serverless</span>
-                        <span class="skill-tag">n8n</span>
-                        <span class="skill-tag">Automatización</span>
-                    </div>
-                </article>
-                
-                <article class="skill-card">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <h3>Inteligencia Artificial</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Utilizacion de Modelos LLaMA</span>
-                        <span class="skill-tag">IA integrada</span>
-                    </div>
-                </article>
-                
-                <article class="skill-card">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fas fa-cogs"></i>
-                        </div>
-                        <h3>Herramientas</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Expo</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Responsive Design</span>
-                    </div>
-                </article>
-            </div>
+        <h3 id="project1Title" class="text-2xl font-bold mb-3">
+          Coaching Management Platform
+        </h3>
+
+        <p id="project1Desc" class="text-slate-300 leading-relaxed mb-5">
+          A web application designed to manage clients, sessions, notes and payments in a clear and efficient interface focused on usability.
+        </p>
+
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="badge rounded-full px-3 py-1.5 text-xs">Angular</span>
+          <span class="badge rounded-full px-3 py-1.5 text-xs">Firebase</span>
+          <span class="badge rounded-full px-3 py-1.5 text-xs">TypeScript</span>
+          <span class="badge rounded-full px-3 py-1.5 text-xs">Dashboard UI</span>
         </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section class="projects fade-in" id="projects">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-badge">
-                    <i class="fas fa-rocket"></i>
-                    Proyectos
-                </div>
-                <h2 class="section-title">Trabajos Destacados</h2>
-                <p class="section-subtitle">
-                    Soluciones reales que han impactado positivamente en usuarios y negocios
-                </p>
-            </div>
-            
-            <div class="projects-grid">
-                <article class="project-card">
-                    <div class="project-header">
-                        <a href="https://onto-ai.icu" target="_blank">
-                        <img src="assets/img/logo-ontoAI.png" alt="ontoAI Logo" class="project-logo">
-                        </a>
-                        <div class="project-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <a href="https://onto-ai.icu"><h3 class="project-title">ontoAI</h3></a>
-                        <p class="project-description">
-                            Plataforma SaaS completa para coaches ontológicos y psicólogos, con gestión integral de clientes, 
-                            seguimiento de sesiones y objetivos, potenciada por inteligencia artificial para optimizar el trabajo profesional.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Angular</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">IA</span>
-                        </div>
-                    </div>
-                </article>
-                
-                <article class="project-card">
-                    <div class="project-header">
-                        <a href="https://github.com/someone1a/calmaTEA">
-                        <img src="assets/img/calmatea-icon.png" alt="CalmaTEA Logo" class="project-logo">
-                        </a>
-                        <div class="project-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <a href="https://github.com/someone1a/calmaTEA">
-                        <h3 class="project-title">CalmaTEA App</h3>
-                        </a>
-                        <p class="project-description">
-                            Aplicación móvil especializada para personas con Trastorno del Espectro Autista, 
-                            incluyendo funcionalidades de autorregulación, comunicación visual con pictogramas y herramientas de apoyo personalizadas.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React Native</span>
-                            <span class="tech-tag">Expo</span>
-                            <span class="tech-tag">UX/UI</span>
-                            <span class="tech-tag">Accesibilidad</span>
-                        </div>
-                    </div>
-                </article>
-                <article class="project-card">
-                     <div class="project-content">
-                        <a href="https://flashcards-3szj.onrender.com"><h3 class="project-title">FlashCards</h3></a>
-                        <p class="project-description">
-                            Aplicación de tarjetas didácticas para facilitar el aprendizaje de conceptos clave, 
-                            de un archivo .csv. 
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">UX/UI</span>
-                            <span class="tech-tag">HTML</span>
-                            </div>
-                    </div>
-                </article>
-            </div>
+        <div class="flex items-center gap-4">
+          <a id="project1Live" href="#" class="text-blue-300 hover:text-blue-200 font-medium transition">Live Demo</a>
+          <a id="project1Code" href="https://github.com/someone1a" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-white font-medium transition">Source Code</a>
         </div>
-    </section>
+      </article>
 
-    <!-- Contact Section -->
-    <section class="contact fade-in" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-badge">
-                    <i class="fas fa-paper-plane"></i>
-                    Contacto
-                </div>
-                <h2 class="section-title">¿Listo para crear algo increíble?</h2>
-                <p class="section-subtitle">
-                    Transformemos tu idea en una solución digital exitosa
-                </p>
-            </div>
-            
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>walter.carrasco@email.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Ubicación</h4>
-                            <p>Chubut, Argentina</p>
-                        </div>
-                    </div>
-                    
-                </div>
-                
-                <div class="contact-cta">
-                    <p>
-                        Si buscas un desarrollador comprometido, creativo y con experiencia real en proyectos que impactan, 
-                        hablemos sobre tu próximo desafío tecnológico.
-                    </p>
-                    
-                    <div class="hero-cta">
-                        <a href="mailto:w4lter.carrasc0.eqs@gmail.com" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i>
-                            Enviar Email
-                        </a>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/walter-carrasco-sant/" class="social-link" title="LinkedIn" aria-label="Perfil de LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/someone1a" class="social-link" title="GitHub" aria-label="Perfil de GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+      <!-- Project 2 -->
+      <article class="project-card glass rounded-3xl p-7">
+        <div class="mb-5 flex items-center justify-between">
+          <span id="project2Tag" class="rounded-full bg-blue-500/10 text-blue-200 border border-blue-400/15 px-3 py-1 text-xs font-semibold">
+            Dashboard
+          </span>
+          <span class="text-xs text-slate-400">02</span>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Walter Carrasco. Desarrollado con código limpio y mucha pasión.</p>
+        <h3 id="project2Title" class="text-2xl font-bold mb-3">
+          Analytics Admin Dashboard
+        </h3>
+
+        <p id="project2Desc" class="text-slate-300 leading-relaxed mb-5">
+          A modern administrative dashboard with reusable UI sections, statistics panels and a clean structure for internal tools and operational workflows.
+        </p>
+
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="badge rounded-full px-3 py-1.5 text-xs">Angular</span>
+          <span class="badge rounded-full px-3 py-1.5 text-xs">Tailwind</span>
+          <span class="badge rounded-full px-3 py-1.5 text-xs">Charts</span>
+          <span class="badge rounded-full px-3 py-1.5 text-xs">Reusable Components</span>
         </div>
-    </footer>
 
-    <!-- JavaScript -->
-     <script src="assets/js/script.js"></script>
+        <div class="flex items-center gap-4">
+          <a id="project2Live" href="#" class="text-blue-300 hover:text-blue-200 font-medium transition">Live Demo</a>
+          <a id="project2Code" href="https://github.com/someone1a" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-white font-medium transition">Source Code</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- RECRUITER CTA SECTION -->
+  <section class="max-w-6xl mx-auto px-6 py-14">
+    <div class="rounded-[2rem] border border-blue-400/15 bg-gradient-to-br from-blue-600/15 via-slate-900/80 to-slate-950 p-8 md:p-10 shadow-2xl shadow-slate-950/50">
+      <div class="max-w-3xl">
+        <p id="recruiterLabel" class="text-sm uppercase tracking-[0.2em] text-blue-300 mb-3">For Recruiters</p>
+        <h2 id="recruiterTitle" class="text-2xl md:text-4xl font-bold mb-4">
+          Looking for a front-end developer with strong UI focus and real execution?
+        </h2>
+        <p id="recruiterText" class="text-slate-300 text-base md:text-lg leading-relaxed mb-7">
+          I’m available for remote opportunities where I can contribute to modern web products, internal tools or client-facing applications with clean implementation, responsive design and attention to performance.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a id="recruiterBtn1" href="mailto:w4lter.carrasc0.eqs@gmail.com" class="inline-flex items-center justify-center rounded-2xl bg-blue-600 px-6 py-3.5 font-semibold hover:bg-blue-500 transition">
+            Contact me by email
+          </a>
+          <a id="recruiterBtn2" href="https://github.com/someone1a" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 px-6 py-3.5 font-semibold hover:bg-white/10 transition">
+            Review my GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="max-w-6xl mx-auto px-6 py-14">
+    <div class="glass rounded-3xl p-8 md:p-10">
+      <p id="contactLabel" class="text-sm uppercase tracking-[0.2em] text-blue-300 mb-3">Contact</p>
+      <h2 id="contactTitle" class="text-2xl md:text-3xl font-bold mb-4">
+        Let’s build something strong
+      </h2>
+      <p id="contactText" class="text-slate-300 mb-6 max-w-2xl">
+        Open to remote front-end roles, freelance opportunities and collaborative product work.
+      </p>
+
+      <div class="flex flex-col gap-3 text-slate-200">
+        <a href="mailto:w4lter.carrasc0.eqs@gmail.com" class="hover:text-blue-300 transition">
+          w4lter.carrasc0.eqs@gmail.com
+        </a>
+        <a href="https://github.com/someone1a" target="_blank" rel="noopener noreferrer" class="hover:text-blue-300 transition">
+          github.com/someone1a
+        </a>
+        <a href="https://waltercarrasco.dev.ar" target="_blank" rel="noopener noreferrer" class="hover:text-blue-300 transition">
+          waltercarrasco.dev.ar
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="max-w-6xl mx-auto px-6 py-8 text-sm text-slate-500">
+    © 2026 Walter Carrasco. All rights reserved.
+  </footer>
+
+  <script>
+    const content = {
+      en: {
+        navAbout: "About",
+        navProjects: "Projects",
+        navContact: "Contact",
+
+        heroBadge: "Available for remote front-end opportunities",
+        title: "Front-End Developer building fast, modern and scalable web experiences",
+        subtitle: "I design and develop polished user interfaces with Angular, JavaScript and Tailwind, focused on performance, usability and clean implementation.",
+        ctaPrimary: "Hire me for your next front-end project",
+        ctaSecondary: "View selected work",
+        quick1: "Responsive UI",
+        quick2: "Reusable Components",
+        quick3: "Performance Focused",
+        quick4: "Remote Collaboration",
+
+        aboutLabel: "About",
+        aboutTitle: "Front-end development with real product thinking",
+        aboutText: "I’m a developer from Argentina focused on building user interfaces that are visually strong, maintainable and fast. My goal is to translate ideas into clean, responsive and production-ready experiences that help businesses present their products better and users interact more easily.",
+        stackLabel: "Tech Stack",
+
+        projectsLabel: "Selected Work",
+        projectsTitle: "Projects that show product, UI and execution",
+        projectsText: "Each project is designed to showcase practical front-end skills: interface structure, user experience, scalability and clean visual presentation.",
+
+        project1Tag: "Web App",
+        project1Title: "Coaching Management Platform",
+        project1Desc: "A web application designed to manage clients, sessions, notes and payments in a clear and efficient interface focused on usability.",
+
+        project2Tag: "Dashboard",
+        project2Title: "Analytics Admin Dashboard",
+        project2Desc: "A modern administrative dashboard with reusable UI sections, statistics panels and a clean structure for internal tools and operational workflows.",
+
+        projectLive: "Live Demo",
+        projectCode: "Source Code",
+
+        recruiterLabel: "For Recruiters",
+        recruiterTitle: "Looking for a front-end developer with strong UI focus and real execution?",
+        recruiterText: "I’m available for remote opportunities where I can contribute to modern web products, internal tools or client-facing applications with clean implementation, responsive design and attention to performance.",
+        recruiterBtn1: "Contact me by email",
+        recruiterBtn2: "Review my GitHub",
+
+        contactLabel: "Contact",
+        contactTitle: "Let’s build something strong",
+        contactText: "Open to remote front-end roles, freelance opportunities and collaborative product work."
+      },
+
+      es: {
+        navAbout: "Sobre mí",
+        navProjects: "Proyectos",
+        navContact: "Contacto",
+
+        heroBadge: "Disponible para oportunidades remotas en front-end",
+        title: "Desarrollador Front-End creando experiencias web rápidas, modernas y escalables",
+        subtitle: "Diseño y desarrollo interfaces pulidas con Angular, JavaScript y Tailwind, enfocadas en rendimiento, usabilidad e implementación limpia.",
+        ctaPrimary: "Contrátame para tu próximo proyecto front-end",
+        ctaSecondary: "Ver proyectos destacados",
+        quick1: "UI Responsiva",
+        quick2: "Componentes Reutilizables",
+        quick3: "Enfoque en Rendimiento",
+        quick4: "Colaboración Remota",
+
+        aboutLabel: "Sobre mí",
+        aboutTitle: "Desarrollo front-end con mentalidad de producto",
+        aboutText: "Soy un desarrollador de Argentina enfocado en construir interfaces visualmente sólidas, mantenibles y rápidas. Mi objetivo es convertir ideas en experiencias limpias, responsivas y listas para producción que ayuden a las empresas a presentar mejor sus productos y a los usuarios a interactuar con más facilidad.",
+        stackLabel: "Tecnologías",
+
+        projectsLabel: "Trabajo Destacado",
+        projectsTitle: "Proyectos que demuestran producto, UI y ejecución",
+        projectsText: "Cada proyecto está pensado para mostrar habilidades prácticas de front-end: estructura de interfaz, experiencia de usuario, escalabilidad y presentación visual limpia.",
+
+        project1Tag: "Aplicación Web",
+        project1Title: "Plataforma de Gestión para Coaching",
+        project1Desc: "Aplicación web diseñada para gestionar clientes, sesiones, notas y pagos mediante una interfaz clara y eficiente enfocada en la usabilidad.",
+
+        project2Tag: "Dashboard",
+        project2Title: "Dashboard Administrativo con Analíticas",
+        project2Desc: "Dashboard administrativo moderno con secciones reutilizables de UI, paneles de estadísticas y una estructura limpia para herramientas internas y flujos operativos.",
+
+        projectLive: "Demo",
+        projectCode: "Código",
+
+        recruiterLabel: "Para Reclutadores",
+        recruiterTitle: "¿Buscas un desarrollador front-end con fuerte enfoque en UI y capacidad real de ejecución?",
+        recruiterText: "Estoy disponible para oportunidades remotas donde pueda aportar en productos web modernos, herramientas internas o aplicaciones orientadas al cliente con implementación limpia, diseño responsivo y atención al rendimiento.",
+        recruiterBtn1: "Contactarme por email",
+        recruiterBtn2: "Ver mi GitHub",
+
+        contactLabel: "Contacto",
+        contactTitle: "Construyamos algo sólido",
+        contactText: "Disponible para roles remotos de front-end, trabajos freelance y colaboración en productos digitales."
+      }
+    };
+
+    function setLang(lang) {
+      document.documentElement.lang = lang;
+
+      const ids = [
+        "navAbout","navProjects","navContact",
+        "heroBadge","title","subtitle","ctaPrimary","ctaSecondary",
+        "quick1","quick2","quick3","quick4",
+        "aboutLabel","aboutTitle","aboutText","stackLabel",
+        "projectsLabel","projectsTitle","projectsText",
+        "project1Tag","project1Title","project1Desc",
+        "project2Tag","project2Title","project2Desc",
+        "recruiterLabel","recruiterTitle","recruiterText","recruiterBtn1","recruiterBtn2",
+        "contactLabel","contactTitle","contactText"
+      ];
+
+      ids.forEach(id => {
+        const el = document.getElementById(id);
+        if (el && content[lang][id]) {
+          el.innerText = content[lang][id];
+        }
+      });
+
+      document.getElementById("project1Live").innerText = content[lang].projectLive;
+      document.getElementById("project1Code").innerText = content[lang].projectCode;
+      document.getElementById("project2Live").innerText = content[lang].projectLive;
+      document.getElementById("project2Code").innerText = content[lang].projectCode;
+    }
+  </script>
 </body>
 </html>
